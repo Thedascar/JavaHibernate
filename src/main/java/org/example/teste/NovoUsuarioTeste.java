@@ -4,6 +4,7 @@ import org.example.basico.Usuario;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
+import javax.persistence.Id;
 import javax.persistence.Persistence;
 
 public class NovoUsuarioTeste {
@@ -14,12 +15,11 @@ public class NovoUsuarioTeste {
         EntityManager em = emf.createEntityManager();
 
 
-        Usuario novoUsuario = new Usuario("Jose Benicio"
-                , "JoseBenicio@hotmail.com");
+        Usuario novoUsuario = new Usuario("Avila Duarte"
+                , "AvilaDuarte@hotmail.com");
         em.getTransaction().begin();
         em.persist(novoUsuario);
         em.getTransaction().commit();
-
 
         em.close();
         emf.close();
