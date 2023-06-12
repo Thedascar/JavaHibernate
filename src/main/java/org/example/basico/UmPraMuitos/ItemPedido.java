@@ -6,7 +6,7 @@ import org.example.basico.Produto;
 import javax.persistence.*;
 
 @Entity
-public class ItemPedido {
+public class ItemPedido{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -15,7 +15,7 @@ public class ItemPedido {
     @ManyToOne
     private Pedido pedido;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     private Produto produto;
 
 

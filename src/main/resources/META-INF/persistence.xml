@@ -5,12 +5,27 @@
              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
     <persistence-unit name="java_primeiro">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <mapping-file>META-INF/consulta.xml</mapping-file>
+
+
         <class>org.example.basico.Usuario</class>
         <class>org.example.basico.Produto</class>
         <class>org.example.basico.UmPraUm.Assento</class>
         <class>org.example.basico.UmPraUm.Cliente</class>
         <class>org.example.basico.UmPraMuitos.ItemPedido</class>
         <class>org.example.basico.UmPraMuitos.Pedido</class>
+        <class>org.example.basico.MuitosParaMuitos.Sobrinho</class>
+        <class>org.example.basico.MuitosParaMuitos.Tio</class>
+        <class>org.example.basico.MuitosParaMuitos.Filme</class>
+        <class>org.example.basico.MuitosParaMuitos.Ator</class>
+        <class>org.example.basico.Composicao.Endereco</class>
+        <class>org.example.basico.Composicao.Fornecedor</class>
+        <class>org.example.basico.Composicao.Funcionario</class>
+        <class>org.example.basico.Heranca.Aluno</class>
+        <class>org.example.basico.Heranca.AlunoBolsista</class>
+
+
 
 
         <properties>

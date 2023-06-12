@@ -5,7 +5,6 @@ import org.example.basico.UmPraMuitos.ItemPedido;
 import org.example.basico.UmPraMuitos.Pedido;
 import org.example.infra.DAO;
 
-import java.io.ObjectStreamException;
 
 public class NovoPedidoMuitos {
     public static void main(String[] args) {
